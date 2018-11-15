@@ -19,12 +19,6 @@ it('renders the correct text with an explicit enthusiasm level of 5', () => {
     expect(hello.find(".greeting").text()).toEqual('Hello Daniel!!!!!');
 });
 
-it('throws when the enthusiasm level is 0', () => {
-    expect(()=>{
-        enzyme.shallow(<Hello name="Daniel" enthusiasmLevel={0}/>)
-    }).toThrow();
-});
-
 it('throws when the enthusiasm level is negative', () => {
     expect(() => {
       enzyme.shallow(<Hello name='Daniel' enthusiasmLevel={-1} />);
