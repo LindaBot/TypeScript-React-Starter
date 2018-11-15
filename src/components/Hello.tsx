@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './Hello.css';
 
 interface Props{
     name: string,
@@ -33,9 +34,9 @@ class Hello extends React.Component<Props, State>{
         if (this.state.currentEnthusiasm <= 0) {
             throw new Error('You could be a little more enthusiastic. :D');
         }
-        
+
         return (
-            <div className="Hello">
+            <div className="hello">
                 <div className="greeting">
                     Hello {name + getExclamationMarks(this.state.currentEnthusiasm)}
                 </div>
