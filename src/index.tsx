@@ -5,7 +5,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <Hello name="TypeScript" enthusiasmLevel={10}/>,
+  <Hello name="TypeScript" enthusiasmLevel={1}/>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
